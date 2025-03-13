@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1></h1>
+            <nav>
+                <ul><!--LISTA DESORDENADA-->
+                      <li><a href="#biografia">Biografía</a></li>  
+                      <li><a href="#equipos">Equipos</a></li>
+                      <li><a href="#logros">Logros</a></li>
+                      <li><a href="#estadisticas">Estadísticas</a></li>
+                      <li><a href="#galeria">Galería</a></li>
+                      <li><a href="#videos">Vídeos</a></li>
+                      <li><a href="#audios">Audios</a></li>
+                      <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </nav>    
+    </header>
+
+    <!--SECCIÓN BIOGRAFÍA-->
+    <section id="biografia"><!--SUBTÍTULO-->
+        <h2>Biografía</h2>
+            <p>Pau Gasol es un ex-jugador...</p>
+            <blockquote>"Me gustan las patatas"</blockquote>
+            <p>Rookie del año 2001</p>
+       </section>
+
+
+    <!--SECCIÓN EQUIPO-->
+    <section id="equipos"><!--SUBTÍTULO-->
+        <h2>Equipos donde jugó Pau</h2>
+        <ul>
+            <li>FC. BARCELONA</li>
+            <li>Memphis</li>
+            <li>Los Ángeles</li>
+            <li>Chicago</li>
+            <li>San Antonio</li>
+            <li>Milwaukee</li>
+        </ul>
+    
+    </section>
+
+    <!--SECCIÓN LOGROS-->
+    <section id="logros"><!--SUBTÍTULO-->
+        <h3>Logros y Palmarés de Pau</h3>
+            <table border="1">
+                <tr> <!--FILA-->
+                    <th>Año</th>
+                    <th>Título</th>
+                    <th>Equipo</th>
+                </tr>
+                <tr>
+                    <th>2009</th>
+                    <th>NBA</th>
+                    <th>Los Ángeles</th>
+                </tr>            
+            </table>
+        
+    </section>
+
+
+    <!--ESTADÍSTICAS-->
+    <section id="estadisticas">
+        <h4>Estadísticas en la NBA</h4>
+        <ul>
+            <li>Puntos pp: 20</li>
+            <li>Rebotes pp: 10</li>
+            <li>Asistencias pp: 5</li>
+            <li>Temporadas: 20</li>
+        </ul>
+    </section>
+
+
+    <!--GALERIA-->
+    <section id="galeria">
+        <h5>Galería de imágenes</h5>
+        <figure>
+            <img src="imagenes/pau_gasol.jpg" alt="Pau con la camiseta del barcelona uniformes">        
+            <figcaption>Pau en su retorno al Barcelona</figcaption>
+        </figure>
+    </section>    
+
+    <!--VÍDEOS-->
+    <section id="videos">
+        <h6>Galería de videos</h6>
+        <video width=""900" controls>
+            <source src="videos/pau_gasol.mp4" type="video/mp4"> 
+        </video>
+    </section> 
+
+    <!--AUDIOS-->
+    <section id="audios">
+        <h7>PRUEBA</h6> <!--NO ME USAS NUNCA-->
+            <audio controls>
+                <source src="audios/pau_gasol_audio.mp3" type="audio/mp3"> 
+            </audio>
+    </section> 
+
+    <!--SECCION CONTACTO.
+    DEBERES
+    Form
+    label
+    input
+    required (dentro de una cosa)
+    br
+    textarea
+    input type submit
+    input type reset
+    button (enviar)
+    button(borrar)
+    -->
+    <section id="contacto">
+        <h2>Contacto</h2>
+        <form action="\enviar_datos" method="post">
+            <!--action: Especifica la URL a la que se enviarán los datos del formulario cuando el usuario lo envíe.
+            method: Define cómo se enviarán los datos (generalmente post para formularios).-->
+                <label for="nombre">Nombre:</label><br>
+                <input type="text" id="nombre" name="nombre" required><br>
+                    <!--<label>: Etiqueta que describe un campo de formulario.
+                    for: Debe coincidir con el id del campo que describe.
+                    <input>: Etiqueta para crear diferentes tipos de campos de entrada.
+                    type: Define el tipo de campo (en este caso, text).
+                    id: Identificador único del campo (usado para vincularlo con la etiqueta <label>).
+                    name: Nombre del campo (usado para enviar los datos al servidor).
+                    required: Indica que este campo es obligatorio.-->
+                <label for="email">Correo electrónico:</label><br>
+                <input type="email" id="email" name="email"><br>
+                <!--type="email": Especifica que este campo debe contener una dirección de correo electrónico válida.-->
+                <label for="mensaje">Mensaje:</label><br>
+                <textarea id="mensaje" name="mensaje" rows="4" cols="50"></textarea><br><!-- <textarea>: Crea un campo de texto de varias líneas.-->
+                <input type="submit" value="Enviar"><br><br><!-- type="submit": Convierte el botón en un botón de envío de formulario.-->    
+                <input type="reset" value="Borrar"><br><!--"reset" es una herramienta sencilla para devolver un formulario a su estado original-->
+            </form>
+
+    <!-- PIE DE PÁGINA -->
+    <footer>
+        <p>&copy; 2025 - Página sobre Pau Gasol. No oficial.</p> <!-- Derechos de autor -->
+        <button onclick="alert('¡Gracias por visitar la página!')">Haz clic aquí</button> <!-- Botón con alerta interactiva -->
+    </footer>
+            
+    </section> 
+
+
+
+
+</body>
+</html>
